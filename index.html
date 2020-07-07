@@ -1,0 +1,322 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <title>HomePage</title>
+</head>
+
+<body>
+
+    <section class="container-fluid FirstWrapper">
+        <div class="container">
+            <div class="PageTitle row">
+                <h1>Economisez grâce aux meilleurs codes promo RAJA !</h1>
+                <p>Nos meilleurs promotions et offres spéciales pour vous</p>
+            </div>
+
+            <!--FIRST SQUARE BLOCK-->
+
+            <div class="SquareBlock row">
+
+                <div class="SquareBlock-Element FirstBlock col-xl col-lg-5 col-md-5 col-8">
+                    <div class="d-flex">
+                        <p class="PromoType CodePromo">code promo</p>
+                        <p class="PromoType EndSoon">Se termine bientôt</p>
+                    </div>
+                    <div class="SquareBlock-percentage">
+                        <p>10%</p>
+                    </div>
+                    <div class="SquareBlock-link Block-White">
+                        <p>Offre exceptionnelle de bienvenue,<br> -10% sur votre première commande!</p>
+                        <div class="PromoCode">
+                            <div class="Link-Code">
+                                <p><input type="text" class="PromoTextField" value="WBIENVENUE">WBIENVENUE</input></p>
+                            </div>
+                            <div class="SquareBlock-copyIcon" id="CopyPromoCode" data-toggle="popover"
+                                data-content="Copié !">
+                                <img src="img/iconfinder_copy_3325102.svg"></img>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--SECOND SQUARE BLOCK-->
+
+                <div class="SquareBlock-Element SecondBlock col-xl col-lg-5 col-md-5 col-8">
+                    <div class="d-flex">
+                        <p class="PromoType Gift">Cadeau</p>
+                    </div>
+                    <div class="SquareBlock-link Block-White">
+                        <p>La personnalisation de vos sacs offerte</p>
+                        <div class="Link-Code">
+                            <a href=""> En profiter maintenant</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!--THIRD SQUARE BLOCK-->
+
+                <div class="SquareBlock-Element ThirdBlock col-xl col-lg-5 col-md-5 col-8">
+                    <div class="d-flex">
+                        <p class="PromoType Plan">Bon Plan</p>
+                    </div>
+                    <div class="SquareBlock-link">
+                        <p>Livraison gratuite dès <strike>250€ht</strike> 200€ht !</p>
+                        <div class="Link-Code">
+                            <a href=""> En profiter maintenant</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="MidBanner container-fluid">
+        <div class="container">
+            <div class="row MidBanner-Container">
+            <div class="MidBanner-Title ">
+                <h3 class="grey">Première commande ?</h3>
+                <p class="grey">Profitez des meilleurs services et de notre offre de bienvenue</p>
+            </div>
+            <div>
+                <img src="img/fr-first-order-perso.png" alt="">
+            </div>
+            <div class="MidBanner-Link">
+                <a href="">Découvrir</a>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="ThirdWrapper container-fluid">
+        <div class="container">
+            <div class="row">
+            <div class="ThirdWrapper-filters">
+                <button id="SeeAllButton" name="Voir tout" value="voir tout" onclick="myFunction()">Voir tout</button>
+                <button id="PromoCodeButton" onclick="myFunction()">Promo</button>
+                <button id="GiftButton" onclick="myFunction()">Cadeau</button>
+                <button id="BestPlanButton" onclick="myFunction()">Bon plan</button>
+            </div>
+
+
+            <!--FIRST OFFER BANNER -->
+
+            <div class="Promo ThirdWrapper-Gift row col-12" id="gift">
+                <div class="Promo-Icon col-3 col-lg-2">
+                    <img src="img/gift.png">
+                </div>
+                <div class="Promo-Info col-9 col-xl-10">
+                    <div class="col-lg-9">
+                        <div class="d-flex">
+                            <p class="PromoType Gift">offert</p>
+                        </div>
+                        <p class="Promo-Title">1 dévidoir de sécurité offert</p>
+                        <p class="Promo-Text">pour l'achat d'un colis de 36 rouleaux d'adhésif résistant 35 microns
+                            (sauf mini-colis)</p>
+                    </div>
+                    <div class="PromoCode col-lg-3 col-9">
+                        <div class="Link-Code">
+                            <a href="#"> En profiter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SECOND OFFER BANNER -->
+
+
+            <div class="Promo ThirdWrapper-BestPlan row col-12" id="BestPlan">
+                <div class="Promo-Icon col-3 col-lg-2">
+                    <p class="PercentIcon">Jusqu'à<br><span>-30%</span></p>
+                </div>
+                <div class="Promo-Info col-9 col-xl-10">
+                    <div class="col-lg-9">
+                        <div class="d-flex">
+                            <p class="PromoType plan">Bon Plan</p>
+                        </div>
+                        <p class="Promo-Title">Jusqu'à -30% sur les caisses carton</p>
+                        <p class="Promo-Text">Faites des économies sur vos achats de caisses carton simple ou double
+                            cannelure</p>
+                    </div>
+                    <div class="PromoCode col-lg-3 col-9">
+                        <div class="Link-Code">
+                            <a href="#">En profiter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--THIRD OFFER BANNER -->
+
+
+            <div class="Promo ThirdWrapper-Promo row col-12">
+                <div class="Promo-Icon col-3 col-lg-2">
+                    <p class="PercentIcon">Jusqu'à<br><span>-10%</span></p>
+                </div>
+                <div class="Promo-Info col-9 col-xl-10">
+                    <div class="col-lg-9">
+                        <div class="d-flex">
+                            <p class="PromoType CodePromo">Code promo</p>
+                            <p class="PromoType EndSoon">Se termine bientôt</p>
+                        </div>
+                        <p class="Promo-Title">Profitez d'une rémise exceptionnelle de -10% sur votre
+                            première commande, en plus de livraison gratuite* !</p>
+                        <p class="Promo-Text">Offre non cumulable, valable uniquement lors de votre première commande
+                            sur Raja.fr jusqu'au 03/11/19, hors prix négociés, machines et systèmes et produits sur
+                            mesure.</p>
+                    </div>
+                    <div class="PromoCode SquareBlock-link col-lg-3 col-9 ">
+                        <div class="Link-Code">
+                            <p><input type="text" class="PromoTextField" value="WBIENVENUE">WBIENVENUE</input></p>
+                        </div>
+                        <div class="SquareBlock-copyIcon" id="CopyPromoCode" data-toggle="popover"
+                            data-content="Copié !">
+                            <img src="img/iconfinder_copy_3325102.svg"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--FOURTH OFFER BANNER -->
+
+
+            <div class="Promo ThirdWrapper-BestPlan row col-12">
+                <div class="Promo-Icon col-3 col-lg-2">
+                    <p class="PercentIcon">Jusqu'à<br><span>-30%</span></p>
+                </div>
+                <div class="Promo-Info col-9 col-xl-10">
+                    <div class="col-lg-9">
+                        <div class="d-flex">
+                            <p class="PromoType plan">Bon Plan</p>
+                        </div>
+                        <p class="Promo-Title">Le meilleur prix dès le premier colis acheté</p>
+                        <p class="Promo-Text">Profitez de prix imbattables sur nos meilleures ventes</p>
+                    </div>
+                    <div class="PromoCode col-lg-3 col-9">
+                        <div class="Link-Code">
+                            <a href="#">En profiter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--FITH OFFER BANNER -->
+
+
+            <div class="Promo ThirdWrapper-BestPlan row col-12">
+                <div class="Promo-Icon col-3 col-lg-2">
+                    <img src="img/truck.png">
+                </div>
+                <div class="Promo-Info col-9 col-xl-10">
+                    <div class="col-lg-9">
+                        <div class="d-flex">
+                            <p class="PromoType plan">Bon Plan</p>
+                        </div>
+                        <p class="Promo-Title">Le meilleur prix dès le premier colis acheté</p>
+                        <p class="Promo-Text">Profitez de prix imbattables sur nos meilleures ventes</p>
+                    </div>
+                    <div class="PromoCode col-lg-3 col-9">
+                        <div class="Link-Code">
+                            <a href="#">En profiter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--SIXTH OFFER BANNER -->
+
+
+            <div class="Promo ThirdWrapper-Promo row col-12">
+                <div class="Promo-Icon col-3 col-lg-2">
+                    <p class="PercentIcon"><span>-20%</span></p>
+                </div>
+                <div class="Promo-Info col-9 col-xl-10">
+                    <div class="col-lg-9">
+                        <div class="d-flex">
+                            <p class="PromoType CodePromo">Code Promo</p>
+                        </div>
+                        <p class="Promo-Title">Profitez d'une rémise exceptionnelle de -10% sur votre
+                            première commande, en plus de livraison gratuite* !</p>
+                        <p class="Promo-Text">Offre non cumulable, valable uniquement lors de votre première commande
+                            sur Raja.fr jusqu'au 03/11/19, hors prix négociés, machines et systèmes et produits sur
+                            mesure.</p>
+                    </div>
+                    <div class="PromoCode SquareBlock-link col-lg-3 col-9 ">
+                        <div class="Link-Code">
+                            <p><input type="text" class="PromoTextField" value="WBIENVENUE">WBIENVENUE</input></p>
+                        </div>
+                        <div class="SquareBlock-copyIcon" id="CopyPromoCode" data-toggle="popover"
+                            data-content="Copié !">
+                            <img src="img/iconfinder_copy_3325102.svg"></img>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="FourthWrapper MidBanner container-fluid">
+        <div class="container MidBanner-Container">
+            <div class="MidBanner-Image col-3">
+                <img src="img/img-99-2.png" alt="">
+                <p class="grey">98,7%</p>
+            </div>
+            <div class="MidBanner-Title col-7">
+                <h3>de clients satisfaits de nos produits et de nos services*</img>
+                    <p>* Etude menée en juin 2019 auprès de 1596 clients</p>
+            </div>
+            <div class="FourthWrapper-Link col-2">
+                <a href=""> <span>></span> En savoir plus</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="FithWrapper container-fluid">
+        <div class="container FithWrapper-contain">
+            <div>
+                <p><span class="bold">Commandez vos emballages et équipements sur Raja.fr au meilleur prix
+                        et réalisez des économies
+                        sur vos achats grace à nos bons plans et codes de réduction.</span><br> Commandez vos emballages et équipements sur Raja.fr au meilleur prix et réalisez des économies 
+                        sur vos achats grace à nos bons plans et codes de réduction. 
+                        Profitez de la livraison gratuite pour toute commande dès 200€ht et de nos remises exceptionnelles.
+                        Abonnez-vous à notre newsletter et restez informés des promotions et des réductions Raja.</p>
+            </div>
+            <div>
+                <p>Conditions d'utilisation de codes promo, promotions et offres spéciales Raja<br>
+                    <span class="light">Livraison gratuite pour toute commande dès 200€ht et à partir de 149€ht pour les nouveaux clients, valable en France metropolitaine.
+                    Consultez les pages des produits concernés pour plus d'informations sur la gratuité du produit complémentaire.
+                    Les codes promo et les promotions ne sont pas cumulables avec les autres actions en cours.</span></p>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="popover"]').popover();
+        });
+    </script>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"
+        defer></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"
+        defer></script>
+    <script type="text/javascript" src="js/script.js" defer></script>
+</body>
+
+</html>
