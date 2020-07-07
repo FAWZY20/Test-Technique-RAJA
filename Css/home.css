@@ -1,0 +1,368 @@
+body{
+    /*font-family: "Roboto condensed";*/
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.grey{
+    color: #4c4c4c;
+}
+.FirstWrapper{
+    margin: auto;
+}
+.FirstWrapper .PageTitle h1{
+    font-size: 36px;
+    font-weight: 700;
+    color: 4c4c4c;
+    font-family: "Roboto condensed";
+}
+.FirstWrapper .PageTitle p{
+    font-size: 20px;
+}
+.SquareBlock-Element{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 0;
+}
+.SquareBlock-Element > div{
+    padding: 0 2vh;
+}
+.SquareBlock-link > div{
+    margin-top: 2vh;
+}
+.PromoType{
+    font-size: 11px;
+    font-weight: bold;
+    border-radius: 2px;
+    padding: 0.4vh 0.9vh;
+    margin: auto 0.5vh;
+    color: #fff;
+    text-transform: uppercase;
+    margin: 1vh 1vw 0 0vw;
+}
+.CodePromo{
+    background-color: #e99b35;
+}
+.EndSoon{
+    background-color: #d42637;
+}
+.plan{
+    background-color: #8126bb;
+}
+.gift{
+    background-color: #1470b7;
+}
+.SquareBlock-Element:nth-child(1){
+    background-image: url(../img/Raja-delivery.png);
+}
+.SquareBlock-Element:nth-child(2){
+    background-image: url(../img/picture-of-a-shocked-young-brunette-woman-in-white-summer-dress-wearing.png);
+    margin: 0 3vh;
+    background-position-x: 80%;
+}
+.SquareBlock-Element:nth-child(3){
+    background-image: url(../img/126512446-truck-driver-keeps-driving-with-one-hands-and-change-gears-the-man-behind-semi-truck-steering-wheel.png);
+}
+.SquareBlock-percentage p{
+    font-size: 80px;
+    font-weight: bold;
+    color: #fff;
+    line-height: initial;
+    margin: 5vh 0 0 0;
+}
+input{
+    display: none;
+}
+.PromoCode{
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    justify-content: flex-end;
+}
+.SquareBlock .PromoCode{
+    margin-bottom: 2vh;
+}
+.SquareBlock-copyIcon{
+    background-color: #e99b35;
+    align-self: stretch;
+    display: flex;
+    padding: 0 0.9vh;
+    cursor: pointer;
+}
+.SquareBlock-link p{
+    font-size: 15px;
+    font-weight: bold;
+    color:#4C4C4C;
+    margin: 0;
+}
+.SquareBlock-link .Link-Code p{
+    border: 2px solid #e99b35;
+    color: #e99b35;
+}
+.SecondBlock .SquareBlock-link p{
+    font-size: 20px;
+}
+.ThirdBlock .SquareBlock-link p{
+    font-size: 20px;
+    color: #fff;
+}
+.SquareBlock-link a{
+    margin-bottom: 2vh;
+}
+.d-flex{
+    display: flex;
+}
+.SquareBlock-link{
+    height: 17vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.Block-White{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+/*.SquareBlock{
+    display: flex;
+    width: fit-content;
+    border: 1px solid #e99b35;
+    margin-bottom: 2vh;;
+}*/
+.Link-Code p, .Link-Code a{
+    background-color: #fff;
+    padding: 1.5vh 3vh;
+    display: inline-block;
+}
+.Link-code a{
+    border: 2px solid #d42637;
+    color: #d42637;
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+.Link-code a::before{
+    content: url('../img/CHevron.svg');
+    position: relative;
+    right: 0.5vw;
+}
+
+   /* SECOND SECTION */
+
+.MidBanner{
+    margin: 5vh 0;
+    background-color: #feebd3;
+    position: relative;
+}
+.MidBanner-Container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.MidBanner-Title{
+    margin: 1vh 0;
+}
+.MidBanner-Title h3{
+    font-size: 36px;
+    font-weight: 300;
+    font-family: Roboto condensed;
+}
+.MidBanner-title p{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+.MidBanner img{
+    position: absolute;
+    bottom: 0;
+    right: 33%;
+}
+.MidBanner-Link a{
+    background-color: #d42637;
+    padding: 2vh 4vh 2vh 4vh;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+.MidBanner-Link a::before{
+    content: url('../img/CHevron-white.svg');
+    position: relative;
+    right: 0.5vw;
+}
+.MidBanner-Link span{
+    padding-right: 2vh;
+}
+
+
+    /*THIRD SECTION*/
+
+.ThirdWrapper-Filters{
+    margin-bottom: 5vh;
+}
+.ThirdWrapper button{
+    background-color: #fff;
+    border: 1px solid #e2e2e2;
+    padding: 2vh 3vh 2vh 3vh;
+    margin-right: 1vw;
+}
+#PromoCodeButton::before{
+    content: url('../img/button-percent.png');
+    position: relative;
+    right: 1vw;
+    top: 1px;
+}
+#GiftButton::before{
+    content: url('../img/button-gift.png');
+    position: relative;
+    right: 1vw;
+    top: 1px;
+}
+#BestPlanButton::before{
+    content: url('../img/bon-plan.png');
+    left: -1vw;
+    top: 1px;
+    position: relative;
+}
+.ThirdWrapper button img{
+    max-height: 100%;
+    object-fit: contain;
+}
+.Promo-Icon{
+    display: flex;
+    align-self: normal;
+    justify-content: center;
+    align-items: center;
+}
+.Promo-icon p{
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 0;
+}
+.promo-icon span{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: "roboto condensed";
+}
+.ThirdWrapper-Gift .Promo-Icon{
+    background-color: #f3f5fc;
+}
+.ThirdWrapper-Promo{
+    animation: ease-in;
+    transition-duration: 500ms;
+}
+.ThirdWrapper .PromoType{
+    margin: 1vh 1vw 1vh 0vw;
+}
+.ThirdWrapper-Promo .Promo-Icon{
+    background-color: #fff3e1;
+    color: #e99b35;
+}
+.ThirdWrapper-BestPlan .Promo-Icon{
+    background-color: #f7ebff;
+    color: #8126bb;
+}
+.promo-Icon img{
+    width: 50%;
+    object-fit: contain;
+}
+.Promo{
+    padding: 0;
+}
+.Promo-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+}
+.ThirdWrapper .Promo{
+    border: 1px solid #dadada;
+    align-items: center;
+    min-height: 20vh;
+    margin: 3vh 0;
+}
+.Promo .SquareBlock-link{
+    height: auto;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.promo-Title{
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    color: #4c4c4c;
+}
+.Promo-Text{
+    font-size: 14px;
+}
+.ThirdWrapper-Gift{
+    animation: ease-in;
+    transition-duration: 500ms;
+}
+
+
+    /*FOURTH SECTION */
+
+.FourthWrapper{
+    background-color: #d3edef;
+}
+.Fourthwrapper .MidBanner-Image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Fourthwrapper img{
+    position: initial;
+}
+.FourthWrapper .MidBanner-Title{
+    margin: 3vh 0;
+}
+.FourthWrapper .MidBanner-Title h3{
+    font-family: "Roboto condensed";
+    font-size: 24px;
+    font-weight: bold;
+}
+.FourthWrapper .MidBanner-Title p{
+    font-size: 14px;
+}
+.FourthWrapper .MidBanner-Image p{
+    font-family: "Roboto condensed";
+    font-size: 50px;
+    font-weight: 300;
+    margin: 0;
+}
+.FourthWrapper-Link{
+    display: flex;
+    justify-content: flex-end;
+}
+.FourthWrapper-Link span{
+    color: #d42637;
+}
+.FourthWrapper-Link a{
+    font-size: 14px;
+    color: #939499;
+}
+
+
+        /* FITH SECTION */
+
+
+.FithWrapper p{
+    text-align: center;
+    font-size: 16px;
+}
+.FithWrapper .bold{
+    font-weight: bold;
+}
+.FithWrapper .light{
+    font-weight: lighter;
+    font-size: 14px;
+    color: #939499;
+}
+.FithWrapper-contain div{
+    margin: 5vh 0;
+}

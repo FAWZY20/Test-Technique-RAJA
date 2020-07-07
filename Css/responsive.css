@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px){
+    .FirstWrapper .PageTitle h1{
+        font-weight: 300;
+    }
+    .SquareBlock-Element > div{
+        flex-wrap: wrap;
+    }
+    .link-code a{
+        font-size: 13px;
+    }
+    .link-code a, .link-code p{
+        padding: 1.5vh 2vh;
+    }
+    .Link-code a::before{
+        content: none;
+    }
+    .PageTitle p{
+        display: none;
+    }
+    .SquareBlock{
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .SquareBlock-link{
+        height: auto;
+    }
+    .MidBanner{
+        display: none;
+    }
+
+        /*THIRD SECTION*/
+
+    .ThirdWrapper-filters{
+        margin-top: 5vh;
+        overflow: auto;
+        white-space: nowrap;
+    }
+    #PromoCodeButton::before,  #BestPlanButton::before, #GiftButton::before{
+        display: none;
+    }
+    .ThirdWrapper button{
+        padding: 1vh 5vh;
+        border: 2px solid #107dc2;
+        border-radius: 7px;
+        color: #107dc2;
+    }
+    .ThirdWrapper .Promo{
+        margin: 0.7vh 0;
+    }
+    .Promo-info{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2vh 1vh;
+    }
+    
+    .Promo .SquareBlock-link{
+        justify-content: end;
+    }
+    .promo-Title{
+        line-height: normal;
+        font-size: 18px;
+    }
+    .Promo-Text{
+        line-height: normal;
+    }
+    .PromoType{
+        font-size: 10px;
+    }
+    .promo-icon span{
+        font-size: 40px;
+    }
+
+    .FourthWrapper, .Fithwrapper{
+        display: none;
+    }
+}
+@media screen and (min-width: 992px) {
+    .SquareBlock {
+        flex-wrap: nowrap;
+        overflow: auto;
+    }
+    .SquareBlock-link {
+        height: auto;
+    }
+    .promo-Icon img {
+        width: 50%!important;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .promo-Icon img{
+        width: 100%;
+    }
+}
