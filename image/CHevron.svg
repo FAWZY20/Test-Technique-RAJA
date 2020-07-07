@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="5px" height="9px" viewBox="0 0 5 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>Fill 1@2x</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M18.50025,27.00025 C18.37225,27.00025 18.24425,26.95125 18.14625,26.85425 C17.95125,26.65825 17.95125,26.34225 18.14625,26.14625 L21.79325,22.50025 L18.14625,18.85325 C17.95125,18.65825 17.95125,18.34125 18.14625,18.14625 C18.34225,17.95125 18.65825,17.95125 18.85425,18.14625 L22.85425,22.14625 C23.04925,22.34125 23.04925,22.65825 22.85425,22.85325 L18.85425,26.85425 C18.75625,26.95125 18.62825,27.00025 18.50025,27.00025" id="path-1"></path>
+    </defs>
+    <g id="Page-Promos" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Landing-Promos" transform="translate(-604.000000, -848.000000)">
+            <g id="TOP-OFFERS" transform="translate(0.000000, 325.000000)">
+                <g id="Offre-2" transform="translate(566.000000, 169.000000)">
+                    <g id="CTA" transform="translate(20.000000, 336.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Fill-1" fill="#D42637" xlink:href="#path-1"></use>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
